@@ -3,7 +3,7 @@
   <head>
     {% include "layouts/partials/head.njk" %}
   </head>
-  <body>
+  <body class="{{ metadata.class.body }}">
     <header>
       <h1 class="home"><a href="{{ '/' | url }}">{{ metadata.title }}</a></h1>
 

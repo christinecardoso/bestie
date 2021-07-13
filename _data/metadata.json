@@ -17,5 +17,8 @@
     "name": "Christine Cardoso",
     "email": "christine@pupbestie.com",
     "url": "https://pupbestie.com/about-me/"
+  },
+  "class": {
+    "body": "antialiased w-full text-gray-700"
   }
 }
