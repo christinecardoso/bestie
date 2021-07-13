@@ -1,0 +1,27 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+<link rel="icon" href="/favicon.ico" />
+<title>{{ title or metadata.title }}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="{{ description or metadata.description }}">
+<meta name="author" content="{{ author or author.name }}" />
+<meta name="referrer" content="no-referrer-when-downgrade">
+
+{# Open graph related #}
+<meta property="og:title" content="{{ title or metadata.site_title }}" />
+<meta property="og:type" content="{{ type or site.type }}" />
+<meta property="og:url" content="{{ url or site.url }}" />
+<meta property="og:image" content="{{ image or site.image }}" />
+<meta property="og:site_name" content="{{ name or site.name }}" />
+<meta property="og:description" content="{{ description or site.description }}" />
+
+<link href="/assets/styles/main.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+
+<link rel="stylesheet" href="{{ '/css/index.css' | url }}">
+<link rel="stylesheet" href="{{ '/css/prism-base16-monokai.dark.css' | url }}">
+<link rel="alternate" href="{{ metadata.feed.path | url }}" type="application/atom+xml" title="{{ metadata.title }}">
+<link rel="alternate" href="{{ metadata.jsonfeed.path | url }}" type="application/json" title="{{ metadata.title }}">
